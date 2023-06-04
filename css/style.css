@@ -5,6 +5,7 @@
     list-style: none;
     box-sizing: border-box;
     text-align: justify;
+    font-family: 'Kanit', sans-serif;
 }
 
 .fotologo {
@@ -41,10 +42,6 @@ nav ul {
     margin-top: 38px;
 }
 
-nav li {
-    font-family: 'Roboto', sans-serif;
-}
-
 li a {
     color: #FFB5C2;
     font-size: 15px;
@@ -59,19 +56,16 @@ li a:hover {
 
 /**Termina el menu de navegacion**/
 
-
+h5 {
+    text-align: center;
+}
 
 .img_car {
     height: 350px;
 }
 
-h5 {
-    font-family: 'Roboto', sans-serif;
-}
-
 .b1 {
     border-radius: 100px;
-    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     padding: 12px;
     background-color: #FFB5C2;
@@ -87,7 +81,6 @@ h5 {
     background-color: #FFB5C2;
     box-shadow: 0 0 10px #000;
     font-weight: 400;
-    font-family: 'Roboto', sans-serif;
 }
 
 /**Termina el Part1**/
@@ -106,7 +99,6 @@ aside li {
     flex-direction: column;
     margin-top: 10px;
     width: 20%;
-    font-family: 'Roboto', sans-serif;
 }
 
 aside img {
@@ -115,50 +107,146 @@ aside img {
 }
 
 /**Termina Aside**/
+.quienes_somos{
+    display: flex;
+    justify-content: center;
+    background-color: #FFB5C2;
+    padding: 50px;
+}
 
+.quienes_somos > article {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quienes_somos h1 , .quienes_somos p {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+/**Termina Quienes somos**/
 h2 {
     text-align: center;
 }
 
-/**Footer**/
+.card_card > article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .card_card span{
+    box-shadow: 0 0 10px #000;
+    width: 18%;
+    padding: 1%;
+    border-radius: 20px;
+  }
+  
+  .card_card div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card_card img{
+    width: 100%;
+    height: 250px;
+  }
 
-footer {
-    background-color: yellow;
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    font-family: 'Roboto', sans-serif;
+.card_card button {
+    background-color: #FFB5C2;
+    border-radius: 50px;
+    transition: 500ms;
+    padding: 8px;
 }
 
-footer ul {
-    grid-column: 1;
+.card_card button:hover {
+    transition: 500ms;
+    box-shadow: 0 0 10px #000
+}
+
+.card_card span div:nth-child(2) {
+    font-size: 20px;
+    font-weight: bolder;
+}
+/**Termina part3**/
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     margin-top: 20px;
+    padding-bottom: 10px;
 }
 
-.derechos {
-    grid-column: 3;
+.email {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    height: 30px;
+    margin-bottom: 25px;
 }
 
-.maps {
-    grid-column: 2;
-    margin: 20px auto;
-}
-
-.maps p {
+input.email1 {
+    color: black;
+    width: 250px;
+    border: 2px solid #E79D98;
+    border-radius: 5px;
     text-align: center;
 }
 
-.redes li {
-    margin-bottom: 30px;
+input.enviar {
+    margin-left: 10px;
+    color: #E79D98;
+    background-color: black;
+    width: 70px;
+    border-radius: 10px;
+    text-align: center;
+}
+/**Termina Newsleter**/
+footer {
+    background-color: #918B76;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+footer .datos {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 50% 50%;
+    
+}
+
+footer .derechos {
+    grid-row: 2;
+}
+
+.datos .redes {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.redes ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.redes div:nth-child(1) {
+    font-weight: bolder;
+}
+
+.datos .maps {
+    grid-column: 2;
 }
 
 .img_footer {
     height: 50px;
     width: 50px;
 }
-.card {
-    align-items: center;
-    background-color: #FFB5C2;
-}
-h5 {
-    text-align: center;
-} 
+
+/**Termina Footer**/
