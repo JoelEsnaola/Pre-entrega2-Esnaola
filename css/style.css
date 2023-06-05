@@ -86,14 +86,14 @@ h5 {
 /**Termina el Part1**/
 
 
-aside {
+aside ul {
     display: flex;
     justify-content: space-around;
     background-color: #FFB5C2;
     gap: 30px;
 }
 
-aside li {
+aside ul li {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -250,3 +250,67 @@ footer .derechos {
 }
 
 /**Termina Footer**/
+
+@media (max-width: 1270px) { 
+    header {grid-template-columns: 24% auto 45%;}
+}
+
+@media (max-width: 1040px) {
+    header {grid-template-columns: 30% auto 55%;}
+}
+
+@media (max-width: 860px) {
+    header {grid-template-columns: 30% auto 65%;}
+}
+
+@media (max-width: 760px) {
+    header {grid-template-columns: 30% auto 70%;}
+}
+
+@media (max-width: 700px) {
+    .card_card > article {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5%;
+        justify-items: center;
+    }
+
+    .card_card span {
+        width: 80%;
+    }
+
+    .card_card img {
+        width: 90%;
+    }
+
+    aside ul {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside ul li {
+        width: 80%;
+    }
+
+    header {
+        
+    }
+}
+/**Termina Responsive**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
