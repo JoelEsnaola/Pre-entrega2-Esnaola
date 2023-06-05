@@ -2,60 +2,133 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    text-align: justify;
     font-family: 'Kanit', sans-serif;
     list-style-type: none;
 }
 
-li {
-    margin-left: -32px;
-}
-
-.fotologo {
-    width: 80px;
-    height: 80px;
-    padding: 8px 0px 0px 10px 
-}
-
-header {
-    display: grid;
-    grid-template-columns: 12% auto 37%;
-    background-color: #918B76;
-    height: 100px;
-}
-
-.logo {
-    grid-column: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.nav {
-    grid-column: 3;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    display: flex;
-    gap: 4rem;
-    margin-top: 38px;
-}
-
-li a {
-    color: #FFB5C2;
-    font-size: 15px;
-    transition: 500ms;
+.a {
     text-decoration: none;
+    color: #000;
 }
 
-li a:hover {
-    transition: 500ms;
-    font-size: 20px;
-}
+header button {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .button {
+    border: 0;
+  }
+  
+  .header {
+    width: 100%;
+    background-color: #918B76;
+    padding: 1em;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    color: white;
+  }
+  
+  .header img {
+    width: 70px;
+    height: 70px;;
+  }
+  
+  
+  .header .button {
+    display: none;
+  }
+  
+  .header .svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
+  }
+  
+  .header .ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  
+  }
+  
+  .header .li {
+    margin: 0 .5em;
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition: 550ms;
+    font-size: 16px;
+  }
+  
+  .header .li:hover {
+    transition: 550ms;
+    font-size: 1.4rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+  @media screen and (max-width:760px) {
+    .header {
+      flex-flow: row wrap;
+    }
+  
+    .header .button {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .header .nav {
+      width: 100%;
+    display: none; 
+      height: 0;
+      pointer-events: none;
+      overflow: hidden;
+      transition: all .5s ease;
+  
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .header .nav.activo {
+      display: block;
+      height: 50vh;
+      pointer-events: auto;
+    }
+  
+    .header .ul {
+      flex-direction: column;
+    }
+  
+    .header .li {
+      margin: 1rem 0;
+    }
+  
+  }
 
 /**Termina el menu de navegacion**/
 
@@ -299,22 +372,6 @@ main {
 
 /**Termina Shop**/
 
-@media (max-width: 1270px) { 
-    header {grid-template-columns: 24% auto 45%;}
-}
-
-@media (max-width: 1040px) {
-    header {grid-template-columns: 30% auto 55%;}
-}
-
-@media (max-width: 860px) {
-    header {grid-template-columns: 30% auto 65%;}
-}
-
-@media (max-width: 760px) {
-    header {grid-template-columns: 30% auto 70%;}
-}
-
 @media (max-width: 700px) {
     .card_card > article {
         display: grid;
@@ -365,6 +422,147 @@ main {
 }
 
 /**Termina Responsive**/
+
+.sos {
+    text-align: center;
+    display: inline;
+}
+
+.sos ul {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.sos ul li {
+    margin-right: 8px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 10px;
+    padding: 2px;
+    border: 2px solid #E79D98;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    align-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.sos1 {
+    font-size: 20px;
+}
+
+.sos ul li a {
+    color: black;
+}
+
+.form1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+.label1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Kanit', sans-serif;
+
+}
+  
+#nombre[type="text"],
+#email[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+textarea {
+    height: 150px;
+}
+  
+input[type="file"] {
+    margin-top: 10px;
+}
+  
+input[type="radio"] {
+    margin-right: 10px;
+}
+  
+.submit[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #E79D98;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+  
+.submit[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: beige;
+}
+  
+.submit[type="submit"]:active,
+input[type="reset"]:active {
+    background-color: beige;
+}
+/**Termina Help**/
+
+.sos ul li {
+    margin-right: 8px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 10px;
+    padding: 2px;
+    border: 2px solid #E79D98;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    align-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.sos1 {
+    font-size: 20px;
+}
+
+.sos ul li a {
+    color: black;
+}
+
+.terms {
+    text-align: center;
+    width: 60%;
+    margin-left: 260px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;   
+    border: 2px solid black;
+    background-color: beige;
+}
+
+/**Termina termsycond**/
 
 
 
