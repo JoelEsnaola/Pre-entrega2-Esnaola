@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
     text-align: justify;
     font-family: 'Kanit', sans-serif;
+    list-style-type: none;
+}
+
+li {
+    margin-left: -32px;
 }
 
 .fotologo {
@@ -38,7 +41,7 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     margin-top: 38px;
 }
 
@@ -86,14 +89,14 @@ h5 {
 /**Termina el Part1**/
 
 
-aside ul {
+.caract ul {
     display: flex;
     justify-content: space-around;
     background-color: #FFB5C2;
     gap: 30px;
 }
 
-aside ul li {
+.caract ul li {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -101,7 +104,7 @@ aside ul li {
     width: 20%;
 }
 
-aside img {
+.caract img {
     height: 50px;
     width: 50px;
 }
@@ -209,18 +212,24 @@ input.enviar {
 footer {
     background-color: #918B76;
     display: grid;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 90% 10%;
 }
 
 footer .datos {
-    display: grid;
-    grid-row: 1;
-    grid-template-columns: 50% 50%;
-    
+    display: flex;
+    flex-direction: row;
+    grid-row: 1; 
+    gap: 3%; 
+    justify-content: center;
+    padding: 1% 0 1% 0;
 }
 
 footer .derechos {
     grid-row: 2;
+}
+
+.derechos p{
+    text-align: center;
 }
 
 .datos .redes {
@@ -228,12 +237,17 @@ footer .derechos {
     display: flex;
     flex-direction: column;
     gap: 5%;
+    margin-left: 2%;
 }
 
 .redes ul {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 60px;
+}
+.redes div:nth-child(2) {
+    display: flex;
+    justify-content: center;
 }
 
 .redes div:nth-child(1) {
@@ -242,6 +256,12 @@ footer .derechos {
 
 .datos .maps {
     grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+.maps iframe {
+    width: 600px;
+    height: 250px;
 }
 
 .img_footer {
@@ -250,6 +270,34 @@ footer .derechos {
 }
 
 /**Termina Footer**/
+
+.menu_lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow : 10px 0px 8px 1px #918b7644;
+}
+
+.menu_lateral ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    gap: 20px;
+}
+
+.muestra {
+    display: flex;
+    flex-direction: row;
+}
+
+/**Termina Shop**/
 
 @media (max-width: 1270px) { 
     header {grid-template-columns: 24% auto 45%;}
@@ -283,25 +331,40 @@ footer .derechos {
         width: 90%;
     }
 
-    aside ul {
+    .caract ul {
         display:flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
     }
 
-    aside ul li {
+    .caract ul li {
         width: 80%;
     }
 
-    header {
-        
+    footer {
+        margin-top: 20px;
     }
 }
+
+@media (max-width: 1070px) {
+    .maps iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 770px) {
+    #datos {
+        display: flex;
+        flex-direction: column;
+    }
+    .redes p{
+        text-align: center;
+    }
+}
+
 /**Termina Responsive**/
-
-
-
 
 
 
