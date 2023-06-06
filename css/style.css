@@ -351,23 +351,27 @@ footer .derechos {
     align-items: center;
     height: 100vh;
     box-shadow : 10px 0px 8px 1px #918b7644;
+    background-color: #918B76;
+    border-radius: 0 0 20px 0;
 }
 
-.menu_lateral ul {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.menu_lateral a button {
+    background-color: #E79D98;
 }
+
 
 main {
     display: grid;
-    grid-template-columns: 15% 85%;
-    gap: 20px;
+    grid-template-columns: 20% 80%;
 }
 
 .muestra {
     display: flex;
     flex-direction: row;
+}
+
+.card_card h2 {
+    width: 100%;
 }
 
 /**Termina Shop**/
